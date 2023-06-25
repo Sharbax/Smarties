@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smarties</title>
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!--Main Style Sheet-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!--Start Navbar-->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="./Imgs/logo.png"><span>Smarties</span>
+          </a>
+          <button class="navbar-toggler" 
+          type="button" 
+          data-bs-toggle="collapse"
+          data-bs-target="#main" 
+          aria-controls="main" 
+          aria-expanded="false" 
+          aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="main">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link p-2 p-lg-3 active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-2 p-lg-3" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-2 p-lg-3" href="#portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-2 p-lg-3" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-2 p-lg-3" href="#contact">Contact</a>
+              </li>
+            </ul>
+            <div class="search ps-3 pe-3 d-none d-lg-block">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <a class="btn btn-primary rounded-pill main-btn" href="#">Login</a>
+          </div>
+        </div>
+    </nav>
+  <!--End Navbar-->
+
+  <!--Start Landing-->
+    <div class="landing d-flex justify-content-center align-items-center">
+      <div class="text-center text-light">
+        <h1>The Key To The World</h1>
+        <p class="fs-6 text-white-50 mb-5">We make all projects look awesome</p>
+        <a class="btn btn-primary rounded-pill main-btn" href="#">Let's Start</a>
+      </div>
+    </div>
+  <!--End Landing-->
+  <!--Start Features-->
+    <div class="features text-center pt-5 pb-5" id="services">
+      <div class="container">
+        <div class="main-title mt-5 mb-5 position-relative">
+          <img class="mb-4" src="./Imgs/heading-image.webp" alt="">
+          <h2>We Are Experts At</h2>
+          <p class="text-black-50 text-uppercase">Check Some Of Our Categories</p>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-4">
+            <div class="feat">
+              <div class="icon-holder position-relative">
+                <i class="fa-solid fa-c position-absolute bottom-0 letter"></i>
+                <i class="fa-solid fa-4x fa-code position-absolute bottom-0 icon"></i>
+              </div>
+              <h4 class="mb-3 mt-3 text-uppercase">Coding</h4>
+              <p class="text-black-50 lh-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut nesciunt nihil quisquam expedita, 
+                consequuntur ea omnis esse eligendi eveniet. Repellat, harum autem ipsum.</p>
+            </div>
+          </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="feat">
+                <div class="icon-holder position-relative">
+                  <i class="fa-solid fa-m position-absolute bottom-0 letter"></i>
+                  <i class="fa-solid fa-4x fa-timeline position-absolute bottom-0 icon"></i>
+                </div>
+                <h4 class="mb-3 mt-3 text-uppercase">Marketing</h4>
+                <p class="text-black-50 lh-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut nesciunt nihil quisquam expedita, 
+                  consequuntur ea omnis esse eligendi eveniet. Repellat, harum autem ipsum.</p>
+              </div>
+            </div>
+              <div class="col-md-6 col-lg-4">
+                <div class="feat">
+                  <div class="icon-holder position-relative">
+                    <i class="fa-solid fa-d position-absolute bottom-0 letter"></i>
+                    <i class="fa-solid fa-4x fa-wand-magic-sparkles position-absolute bottom-0 icon"></i>
+                  </div>
+                  <h4 class="mb-3 mt-3 text-uppercase">Designing</h4>
+                  <p class="text-black-50 lh-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut nesciunt nihil quisquam expedita, 
+                    consequuntur ea omnis esse eligendi eveniet. Repellat, harum autem ipsum.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  <!--End Features-->
+  <!--Start Our Work-->
+        <div class="our-work text-center pt-5 pb-5">
+          <div class="container" id="portfolio">
+            <div class="main-title mt-5 mb-5 position-relative">
+              <img class="mb-4" src="./Imgs/heading-image.webp" alt="">
+              <h2>Our Projects ?</h2>
+              <p class="text-black-50 text-uppercase">Don't Be Surprised</p>
+            </div>
+            <ul class="list-unstyled d-flex justify-content-center mt-5 mb-5 switcher">
+              <li class="active rounded-pill" data-cat=".all">All</li>
+              <li data-cat=".coding">Coding</li>
+              <li data-cat=".marketing">Marketing</li>
+              <li data-cat=".designing">Designing</li>
+            </ul>
+            <div class="row">
+              <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="box mb-3" data-work="Coding">
+                  <img src="./Imgs/project1.jpeg" alt="" class="img-fluid all coding">
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="box mb-3" data-work="Designing">
+                  <img src="./Imgs/project2.jpeg" alt="" class="img-fluid all designing">
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="box mb-3" data-work="Marketing">
+                  <img src="./Imgs/project3.avif" alt="" class="img-fluid all marketing">
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="box mb-3" data-work="Coding">
+                  <img src="./Imgs/project4.jpeg" alt="" class="img-fluid all coding">
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="box mb-3" data-work="Designing">
+                  <img src="./Imgs/project5.jpeg" alt="" class="img-fluid all designing">
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="box mb-3" data-work="Marketing">
+                  <img src="./Imgs/project6.jpeg" alt="" class="img-fluid all marketing">
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="box mb-3" data-work="Coding">
+                  <img src="./Imgs/project7.jpeg" alt="" class="img-fluid all coding">
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="box mb-3" data-work="Designing">
+                  <img src="./Imgs/project8.webp" alt="" class="img-fluid all designing">
+                </div>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center mt-5">
+              <a class="btn text-uppercase rounded-pill main-btn" href="#">More</a>
+            </div>
+          </div>
+        </div>
+  <!--End Our Work-->
+  <!--Start Team-->
+    <div class="team text-center pb-5 pt-5">
+      <div class="container pb-5" id="about">
+        <div class="main-title mt-5 mb-5 position-relative">
+          <img class="mb-4" src="./Imgs/heading-image.webp" alt="">
+          <h2>The Team Salute You</h2>
+          <p class="text-black-50 text-uppercase">We Are Excited To Meet You!</p>
+        </div>
+        <div class="row pt-5">
+          <div class=" col-md-6 col-lg-3">
+            <div class="box">
+              <img class="img-fluid" src="./Imgs/team1.png" alt="">
+              <h4 class="pt-2 pb-2">Adam Nill</h4>
+              <blockquote class="pt-3 pb-3 text-black-50 fw-bold">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas voluptas fugiat voluptates ab doloremque."</blockquote>
+            </div>
+          </div>
+          <div class=" col-md-6 col-lg-3">
+            <div class="box">
+              <img class="img-fluid" src="./Imgs/team2.png" alt="">
+              <h4 class="pt-2 pb-2">Jack Bart</h4>
+              <blockquote class="pt-3 pb-3 text-black-50 fw-bold">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas voluptas fugiat voluptates ab doloremque."</blockquote>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="box">
+              <img class="img-fluid" src="./Imgs/team3.png" alt="">
+              <h4 class="pt-2 pb-2">Moe Raly</h4>
+              <blockquote class="pt-3 pb-3 text-black-50 fw-bold">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas voluptas fugiat voluptates ab doloremque."</blockquote>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="box">
+              <img class="img-fluid" src="./Imgs/team4.png" alt="">
+              <h4 class="pt-2 pb-2">Kay Zee</h4>
+              <blockquote class="pt-3 pb-3 text-black-50 fw-bold">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas voluptas fugiat voluptates ab doloremque."</blockquote>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  <!--End Team-->
+
+  <!--Start Techs-->
+  <div class="techs pt-5 pb-5 text-center">
+    <div class="container mt-5">
+      <div class="row ">
+        <div class="col-sm-6 col-md-4 col-lg-2 mt-3 mb-3 fw-bold fs-2 text-black-50">
+          <i class="fa-solid fa-a"></i>
+          <p>Adventure</p>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2 mt-3 mb-3 fw-bold fs-2 text-black-50">
+          <i class="fa-solid fa-b"></i>
+          <p>Believe</p>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2 mt-3 mb-3 fw-bold fs-2 text-black-50">
+          <i class="fa-solid fa-c"></i>
+          <p>Creativity</p>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2 mt-3 mb-3 fw-bold fs-2 text-black-50">
+          <i class="fa-solid fa-d"></i>
+          <p>Dream</p>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2 mt-3 mb-3 fw-bold fs-2 text-black-50">
+          <i class="fa-solid fa-e"></i>
+          <p>Effort</p>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2 mt-3 mb-3 fw-bold fs-2 text-black-50">
+          <i class="fa-solid fa-f"></i>
+          <p>Fancy</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!--End Techs-->
+  <!--Start Project-->
+  <div class="project text-center pt-5 pb-5 text-light">
+    <h2>Start The Adventure</h2>
+    <p class="text-white-50">
+      <span>Believe</span> in our <span>Creativity</span> and your<span> Dream</span> will be done by our <span>Effort</span> together to get the<span> Fancy</span> result!
+    </p>
+    <a class="btn btn-primary rounded-pill main-btn mt-4" href="#">Ready?</a>
+  </div>
+  <!--End Project-->
+  <!--Start Events-->
+  <div class="events pt-5 pb-5">
+    <div class="container text-center">
+      <div class="main-title mt-5 mb-5 position-relative">
+        <img class="mb-4" src="./Imgs/heading-image.webp" alt="">
+        <h2>Check Our Events</h2>
+        <p class="text-black-50 text-uppercase">Join Us And Get Amazed</p>
+      </div>
+      <div class="row mb-3">
+        <div class="col-md-6 col-lg-4">
+          <div class="card">
+            <img src="./Imgs/event1.png" class="card-img-top" alt="Event 1">
+            <div class="card-body">
+              <span class="text-black-50">July 15, 2023</span>
+              <h5 class="card-title">Awesome Coding Event Is Loading..</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card">
+            <img src="./Imgs/event2.jpeg" class="card-img-top" alt="Event 1">
+            <div class="card-body">
+              <span class="text-black-50">August 2, 2023</span>
+              <h5 class="card-title">Awesome Marketing Event Is Loading..</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card">
+            <img src="./Imgs/event3.jpeg" class="card-img-top" alt="Event 1">
+            <div class="card-body">
+              <span class="text-black-50">August 15, 2023</span>
+              <h5 class="card-title">Awesome Designing Event Is Loading..</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="btn btn-primary rounded-pill main-btn mt-5" href="#">More Events Coming</a>
+    </div>
+  </div>
+  <!--End Events-->
+
+  <!--Start Footer-->
+  <div class="footer pt-5 pb-5 text-white-50 text-center text-md-start">
+    <div class="container" id="contact">
+      <div class="row">
+        <div class="col-md-6 col-lg-4">
+          <div class="info mb-5">
+            <div class="img mb-4">
+              <img src="./Imgs/logo.png"><span>Smarties</span>
+            </div>
+            <p class="mb-5 text-black-50">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolor non, delectus sequi labore maxime unde eligendi facilis quod.
+            </p>
+            <div class="copyright text-black-50">
+              Created By <span>Sharbax</span>
+              <div>&copy; 2023 - <span>Smarties</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-2">
+          <div class="links">
+            <h5 class="text-light">Links</h5>
+            <ul class="list-unstyled lh-lg">
+              <li>Home</li>
+              <li>Services</li>
+              <li>Portfolio</li>
+              <li>Team</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-2">
+          <div class="links">
+            <h5 class="text-light">Forms</h5>
+            <ul class="list-unstyled lh-lg">
+              <li>Register</li>
+              <li>Sign In</li>
+              <li>About Us</li>
+              <li>Events</li>
+              <li>Contact Us</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="contact">
+            <h5 class="text-light">Reach Us</h5>
+            <p class="lh-lg mt-3 mb-5">Get in touch with us via mail or phone and lets surprise the world. </p>
+            <a class="btn btn-primary rounded-pill main-btn w-100" href="#">mhamadsharbaji@hotmail.com</a>
+            <ul class="d-flex mt-5 list-unstyled gap-3">
+              <li>
+                <a class="d-block text-light" href="">
+                  <i class="fa-brands fa-facebook fa-lg facebook rounded-circle p-2"></i>
+                </a>
+              </li>
+              <li>
+                <a class="d-block text-light" href="">
+                  <i class="fa-brands fa-twitter fa-lg twitter rounded-circle p-2"></i>
+                </a>
+              </li>
+              <li>
+                <a class="d-block text-light" href="">
+                  <i class="fa-brands fa-linkedin fa-lg linkedin rounded-circle p-2"></i>
+                </a>
+              </li>
+              <li>
+                <a class="d-block text-light" href="">
+                  <i class="fa-brands fa-youtube fa-lg youtube rounded-circle p-2"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--End Footer-->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="./js/main.js"></script> 
+</body>
+</html>
